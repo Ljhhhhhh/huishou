@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>找回密码</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <div class="login">
+    <div class="logo_box">
+      <img src="./imgs/default.png" alt="logo">
+    </div>
+    <form action="">
+      <p>
+        <label for="phone_number">
+          <i class="fa fa-mobile" aria-hidden="true"></i>
+        </label>
+        <input type="number" name="phone_number" placeholder="手机号码" maxlength="11">
+      </p>
+      <p>
+        <label for="pasword">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+        </label>
+        <input type="password" name="password" placeholder="登录密码" maxlength="16">
+      </p>
+      <p>
+        <label for="verify">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </label>
+        <input type="text" name="verify" placeholder="请输入验证码" maxlength="6">
+        <button class="weui-btn weui-btn_mini">发送验证码</button>
+      </p>
+      <button type="submit" class="weui-btn">确认</button>
+    </form>
+    <p class="btn_more">
+      <a href="./login.html">登录已有账号</a>
+    </p>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="./common/common.js"></script>
+</body>
+
+</html>

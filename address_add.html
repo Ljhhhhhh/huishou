@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地址</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./css/user_center.css">
+</head>
+
+<body class="bg_gray">
+    <div class="weui-cells weui-cells_form address_add_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" placeholder="最少两个字">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">电话</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="number" placeholder="不少于7位">
+            </div>
+        </div>
+        <div class="weui-cell no_border">
+            <div class="weui-cell__hd">
+                <label class="weui-label">详细地址</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" placeholder="5~50个字，且不能全为数字">
+            </div>
+        </div>
+        <div class="color_border"></div>
+        <p class="address_default" id="address_default_btn">
+                <i class="fa fa-circle-o"></i>设置为默认地址</p>
+    </div>
+    <a href="javascript:;" class="weui-btn weui-btn_primary add_address_btn">确认地址</a>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="./common/common.js"></script>
+    <script>
+        $(function(){
+            $('#address_default_btn').on('click',function(){
+                $(this).toggleClass('active').children('i')
+                .hasClass('fa-circle-o')?
+                $(this).children('i').removeClass('fa-circle-o').addClass('fa-check-circle-o'):
+                $(this).children('i').removeClass('fa-check-circle-o').addClass('fa-circle-o')
+        })
+    })
+    </script>
+</body>
+
+</html>

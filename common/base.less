@@ -1,0 +1,119 @@
+/* 通用 */
+
+@charset "utf-8";
+@theme_red: #F95341;
+@theme_gray: #F5F5F5;
+@theme_blue: #4795D5;
+html,
+body {
+  font-size: 12px;
+  background-color: #FFF;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #898989;
+}
+
+.radius5 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.float_r {
+  float: right;
+}
+
+.border_1px {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #BBB;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+.center_all {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.weui-tabbar {
+  background-color: #FFF;
+}
+
+.weui-search-bar:after,
+.weui-search-bar:before {
+  border: none;
+}
+
+.weui-search-bar__cancel-btn {
+  color: #FFF;
+}
+
+.weui-tabbar a.active {
+  p,
+  i {
+    color: @theme_red;
+  }
+}
+
+.contact {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(200, 0, 0, 0.3);
+  padding: 5px;
+  a {
+    display: block;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.toolbar .picker-button {
+  color: @theme_red;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+#searchBar {
+  background-color: @theme_red;
+  form.weui-search-bar__form {
+    .radius5;
+  }
+}
+
+.toolbar .toolbar-inner {
+  height: 40px;
+}
+
+.toolbar .title {
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.weui-picker-modal .picker-items {
+  font-size: 16px;
+}

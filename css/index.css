@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* 通用 */
+html,
+body {
+  font-size: 12px;
+  background-color: #FFF;
+}
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #898989;
+}
+.radius5 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.float_r {
+  float: right;
+}
+.border_1px:after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid #BBB;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.center_all {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.weui-tabbar {
+  background-color: #FFF;
+}
+.weui-search-bar:after,
+.weui-search-bar:before {
+  border: none;
+}
+.weui-search-bar__cancel-btn {
+  color: #FFF;
+}
+.weui-tabbar a.active p,
+.weui-tabbar a.active i {
+  color: #F95341;
+}
+.contact {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(200, 0, 0, 0.3);
+  padding: 5px;
+}
+.contact a {
+  display: block;
+}
+.contact a img {
+  width: 35px;
+  height: 35px;
+}
+.toolbar .picker-button {
+  color: #F95341;
+  font-size: 16px;
+  line-height: 40px;
+}
+#searchBar {
+  background-color: #F95341;
+}
+#searchBar form.weui-search-bar__form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.toolbar .toolbar-inner {
+  height: 40px;
+}
+.toolbar .title {
+  line-height: 40px;
+  font-size: 16px;
+}
+.weui-picker-modal .picker-items {
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+}
+.tabs_box {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  overflow-x: auto;
+}
+.tabs_box::-webkit-scrollbar {
+  display: none;
+}
+.tabs_box ul {
+  position: absolute;
+  background-color: #F95341;
+  color: #F7BBBB;
+  width: auto;
+  height: 100%;
+  white-space: nowrap;
+}
+.tabs_box ul li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.tabs_box ul li.active {
+  color: #FFF;
+}
+#product_box {
+  background-color: #F0F0F2;
+  overflow: scroll;
+  position: relative;
+}
+#product_box .product_list {
+  position: absolute;
+  top: 0;
+  font-size: 0;
+  display: none;
+  padding-bottom: 15px;
+}
+#product_box .product_list.active {
+  display: block;
+}
+#product_box .product_list li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  padding: 10px 5px 0 5px;
+}
+#product_box .product_list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#product_box .product_list li a img {
+  width: 100%;
+  height: auto;
+}
+.submit_ok {
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+.submit_ok .submit_desc {
+  color: #858585;
+  margin: 30px 0;
+}
+.submit_ok .see {
+  padding: 5px 0;
+  background-color: #4795D5;
+  font-size: 14px;
+}
+.submit_ok .back {
+  padding: 5px 0;
+  background-color: #FFF;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #4795D5;
+  color: #4795D5;
+}
+.select_year {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 5px solid #F5F5F5;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  color: #333;
+}
+.select_year #select_year {
+  font-size: 14px;
+  color: #BBB;
+  outline: none;
+  width: 100%;
+  line-height: 40px;
+  border: none;
+  text-indent: 15px;
+}
+.select_year .icon {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#F5F5F5)) no-repeat left center;
+  background: -webkit-linear-gradient(top, #F5F5F5, #F5F5F5) no-repeat left center;
+  background: -o-linear-gradient(top, #F5F5F5, #F5F5F5) no-repeat left center;
+  background: linear-gradient(to bottom, #F5F5F5, #F5F5F5) no-repeat left center;
+  -webkit-background-size: 1px 80%;
+  background-size: 1px 80%;
+  font-size: 16px;
+}
+.select_year .icon em {
+  display: inline-block;
+  font-style: normal;
+  text-indent: 15px;
+}
+.weui-cells:after,
+.weui-cells:before {
+  border: none;
+}
+.weui-cell:before {
+  display: none;
+}
+.weui-cell:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  z-index: 2;
+}
+.weui-cell__ft span {
+  display: inline-block;
+  color: #FFF;
+  padding: 0 2px;
+  font-size: 10px;
+}
+.weui-cell__ft .has_pic {
+  background-color: #FFB428;
+}
+.weui-cell__ft .hot {
+  background-color: #FF7B27;
+}
+.weui-cell__ft .recovery {
+  background-color: #F95341;
+}
+.weui-cell_access .weui-cell__ft:after {
+  border-color: #464646;
+  border-width: 1px 1px 0 0;
+}
+.phone_info {
+  margin-top: 0;
+  padding-top: 15px;
+}
+.phone_info .weui-cell {
+  padding: 5px 15px;
+}
+.phone_info .weui-cell h3 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  line-height: 30px;
+}
+.phone_info .weui-cell h3 strong {
+  font-size: 14px;
+  display: inline-block;
+  color: #F95341;
+  padding-left: 10px;
+  font-weight: normal;
+}
+.phone_info .weui-cell h3 span {
+  font-size: 14px;
+  color: #F95341;
+  display: none;
+  float: right;
+  padding-right: 15px;
+}
+.phone_info .weui-cell .option {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  display: none;
+}
+.phone_info .weui-cell .option.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.phone_info .weui-cell .option li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
+  margin: 0 5px 5px 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid #9A9A9A;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #333;
+  height: 30px;
+  line-height: 30px;
+}

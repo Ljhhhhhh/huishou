@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* 登录、注册、忘记密码 */
+/* 通用 */
+html,
+body {
+  font-size: 12px;
+  background-color: #FFF;
+}
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #898989;
+}
+.radius5 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.float_r {
+  float: right;
+}
+.border_1px:after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid #BBB;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.center_all {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.weui-tabbar {
+  background-color: #FFF;
+}
+.weui-search-bar:after,
+.weui-search-bar:before {
+  border: none;
+}
+.weui-search-bar__cancel-btn {
+  color: #FFF;
+}
+.weui-tabbar a.active p,
+.weui-tabbar a.active i {
+  color: #F95341;
+}
+.contact {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(200, 0, 0, 0.3);
+  padding: 5px;
+}
+.contact a {
+  display: block;
+}
+.contact a img {
+  width: 35px;
+  height: 35px;
+}
+.toolbar .picker-button {
+  color: #F95341;
+  font-size: 16px;
+  line-height: 40px;
+}
+#searchBar {
+  background-color: #F95341;
+}
+#searchBar form.weui-search-bar__form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.toolbar .toolbar-inner {
+  height: 40px;
+}
+.toolbar .title {
+  line-height: 40px;
+  font-size: 16px;
+}
+.weui-picker-modal .picker-items {
+  font-size: 16px;
+}
+.login {
+  width: 100%;
+  height: auto;
+  padding: 0 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  top: 45%;
+}
+.login .logo_box {
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+  height: auto;
+}
+.login .logo_box img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.login form {
+  margin-top: 30px;
+}
+.login form p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  position: relative;
+  padding: 0 1rem;
+  line-height: 48px;
+  margin: 1rem 0;
+  color: #898989;
+}
+.login form p label {
+  font-size: 24px;
+  position: absolute;
+}
+.login form p input {
+  border: none;
+  background: none;
+  width: 90%;
+  padding: 0 0 0 24px;
+  line-height: 48px;
+  color: #898989;
+  font-size: 16px;
+}
+.login form p input:focus {
+  outline: none;
+}
+.login form p button.weui-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: none;
+  background-color: #F95341;
+}
+.login form button[type='submit'] {
+  border: none;
+  background-color: #F95341;
+}
+.login .btn_more {
+  margin-top: 15px;
+}
+.sshs {
+  width: 100%;
+  position: absolute;
+  bottom: 24px;
+  text-align: center;
+  font-size: 1rem;
+  color: #898989;
+}
